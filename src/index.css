@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .no-scrollbar {
+      /* Add more prefixes for better browser support */
+      -webkit-scrollbar-width: none;
+      -moz-scrollbar-width: none;
+      scrollbar-width: none;
+  
+      /* Hide the scrollbar */
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      &::-moz-scrollbar {
+        display: none;
+      }
+    }
+  }
