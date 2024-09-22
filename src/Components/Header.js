@@ -41,14 +41,14 @@ const Header=()=>{
      
   
   return(
-        <div className=" absolute w-full px-8 py-2 bg-gradient-to-b from-black z-10 flex justify-between">
+        <div className=" absolute w-full px-8 py-2 bg-gradient-to-b from-black  flex justify-between top-0 left-0 z-50">
           <div>
           <img className="w-40" src={LOGO} alt='netflix-logo'/>
           </div>
          {user&&(<div className='flex p-2'>
           <img className ='w-12 h-12 'src={User_Avatar} alt="user-icon"/>
          
-         <button onClick={handleSignOut} className="font-bold text-white">(SignOut)</button>
+         <button onClick={handleSignOut} className="font-bold text-white cursor-pointer">(SignOut)</button>
          </div>)}
            
 
