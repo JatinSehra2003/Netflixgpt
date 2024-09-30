@@ -14,7 +14,7 @@ const MainContainer = () => {
   const { original_title, overview, id  } = mainMovie ;
 
   return (
-    <div className="z-20 flex w-full md:h-screen md:items-center">
+    <div className="  z-20 flex w-full h-screen md:items-center bg-black">
       <VideoTitle title={original_title} overview={overview }/>
       <VideoBackground movieId={id}/>
     </div>
