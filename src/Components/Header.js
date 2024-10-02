@@ -65,10 +65,10 @@ const Header=()=>{
           <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg mt-0 m-2" onClick={handleGptSearchClick}>
            {ShowGptSearch ? "Home": " AI🔍"}
           </button>
-          <div className="flex flex-col items-center">
+          <div className="flex items-center gap-3">
           <img className ='w-12 h-12 'src={User_Avatar} alt="user-icon"/>
          
-         <button onClick={handleSignOut} className="font-bold text-white cursor-pointer">(SignOut)</button>
+         <button onClick={handleSignOut} className="font-bold text-white cursor-pointer px-8 py-2 rounded-md bg-red-600">SignOut</button>
          </div>
          </div>)}
            
